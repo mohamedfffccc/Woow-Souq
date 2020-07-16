@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.acivity.slied_bar.About_AppActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_about_app_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about_app"
+            android:gravity="center"
+            android:fontFamily="@font/cairo"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/activity_about_app_tv"
+        android:layout_below="@+id/activity_about_app_tool_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_app"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/cairo"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/textColor"/>
+
+
+
+    <TextView
+        android:id="@+id/activity_about_app_tv_abuot_app"
+        android:layout_below="@+id/activity_about_app_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" اابنتىرخهبىثبثخهثخب ؤهنخحسيكمسني تتستخهمتنيحخصمثي هتشمتيةمشسن هتنتبثن ههتخهتةنمىبثي خهتمنةمس نهتمةمىةس نهنتةمنةسب "
+        android:gravity="center"
+        android:fontFamily="@font/cairo"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/textColor"/>
+
+
+
+</RelativeLayout>

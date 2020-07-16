@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.acivity.slied_bar.MyPurchasesActivity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_my_purchases_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/my_purchases"
+            android:gravity="center"
+            android:fontFamily="@font/cairo"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/activity_my_purchases_tv_latest_purchases"
+        android:layout_below="@+id/activity_my_purchases_tool_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latest_purchases"
+        android:fontFamily="@font/cairo"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"/>
+
+
+
+    <TextView
+        android:id="@+id/activity_my_purchases_tv_date_latest_purchases"
+        android:layout_below="@+id/activity_my_purchases_tv_latest_purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="20/20/2020"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_my_purchases_rv_latest_purchases"
+       android:layout_below="@+id/activity_my_purchases_tv_date_latest_purchases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/activity_my_purchases_tv_previous_purchases"
+        android:layout_below="@+id/activity_my_purchases_rv_latest_purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous_purchases"
+        android:fontFamily="@font/cairo"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"/>
+
+
+
+    <TextView
+        android:id="@+id/activity_my_purchases_tv_date_previous_purchases"
+        android:layout_below="@+id/activity_my_purchases_tv_previous_purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="20/20/2020"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_my_purchases_rv_previous_purchases"
+        android:layout_below="@+id/activity_my_purchases_tv_date_previous_purchases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+</RelativeLayout>

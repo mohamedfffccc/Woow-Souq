@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/white"
+        app:headerLayout="@layout/nav_header_home"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/activity_home_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/bac">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/activity_home_iv_img_profile"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:src="@drawable/ic_person"
+                    android:background="@drawable/shape_crcail_color"/>
+
+
+                <TextView
+                    android:id="@+id/activity_home_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_home_iv_img_profile"
+                    android:fontFamily="@font/cairo"
+                    android:text="احمد حجازي محمد"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+                <TextView
+                    android:id="@+id/activity_home_tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_home_tv_name"
+                    android:fontFamily="@font/cairo"
+                    android:layout_centerHorizontal="true"
+                    android:text="enga7074@gmail.com"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_below="@+id/activity_home_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/activity_home_ln_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_shopping" />
+
+
+                        <TextView
+                            android:id="@+id/activity_home_tv_department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:fontFamily="@font/cairo"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/department"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/_13ssp" />
+                        <ImageView
+                            android:layout_margin="@dimen/_5sdp"
+                            android:id="@+id/activity_home_btn_show_department"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_home_lv_departments"
+                        android:layout_below="@id/activity_home_ln_1"/>
+                    <ListView
+
+                        android:layout_width="wrap_content"
+                        android:id="@+id/activity_home_lv_menu"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_home_lv_departments"
+                        />
+
+
+
+
+                    <Button
+                        android:layout_below="@+id/activity_home_lv_menu"
+                        android:id="@+id/activity_home_btn_login"
+                        android:layout_width="@dimen/_293sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo"
+                        android:text="@string/login"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_13ssp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_button"/>
+
+
+
+                    <Button
+                        android:id="@+id/activity_home_btn_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_home_btn_login"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/shape_button_border"
+                        android:fontFamily="@font/cairo"
+                        android:text="@string/create_a_new_account"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

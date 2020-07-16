@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/item_product_ln_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_linear_layout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+
+
+        <ImageView
+            android:id="@+id/item_product_iv_product_img"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/woowsouqlogo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <ImageView
+            android:id="@+id/item_product_iv_product_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/item_product_ln_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_linear_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+
+        <TextView
+            android:id="@+id/item_product_tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cairo"
+            android:gravity="center"
+            android:text=" ايفون 6 ايفون 6"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/item_product_tv_product_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cairo"
+            android:text="احمد حجازي محمد عبدالله"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@android:color/darker_gray" />
+
+
+        <RatingBar
+            android:id="@+id/item_product_rb_product"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_gravity="center"
+            android:scaleX=".5"
+            android:scaleY=".5" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/item_product_iv_btn_favorite"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favorite_darker" />
+
+
+            <TextView
+                android:id="@+id/item_product_tv_product_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:text="200 دينار"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/item_product_iv_btn_cart"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_cart_orang" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

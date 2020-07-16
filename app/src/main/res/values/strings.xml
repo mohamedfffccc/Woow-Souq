@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Woow Souq</string>
+    <string name="login">Login</string>
+    <string name="new_register">New Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="dont_have_an_account"> Dont have an account ?</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="user_name">User Name</string>
+    <string name="age">Age</string>
+    <string name="register">Register</string>
+    <string name="have_you_created_an_account_before">Have you created an account before ?</string>
+    <string name="log_in">Login</string>
+    <string name="user">User</string>
+    <string name="dealer">Dealer</string>
+    <string name="department"> Department</string>
+    <string name="offers">Offers</string>
+    <string name="my_purchases">My Purchases</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="about_app">About App</string>
+    <string name="loguot">LogUot</string>
+    <string name="products">Products</string>
+    <string name="latest_purchases">Latest Purchases</string>
+    <string name="previous_purchases">Previous Purchases</string>
+    <string name="add_product">Add Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="details_product">Details Product</string>
+    <string name="product_price">Product Price</string>
+    <string name="address">address</string>
+    <string name="wallet">wallet</string>
+    <string name="phone">phone</string>
+    <string name="edit_profile">edit profile</string>
+    <string name="submit">submit</string>
+    <string name="next">next</string>
+    <string name="cart">cart</string>
+    <string name="confirm_order">confirm order</string>
+    <string name="add_more">add more</string>
+    <string name="facebook_app_id">937056923408744</string>
+    <string name="fb_login_protocol_scheme">fb937056923408744</string>
+</resources>

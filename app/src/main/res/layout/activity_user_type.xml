@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.acivity.UserTypeActivity">
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"        android:layout_centerInParent="true"
+        android:text="@string/user"
+        android:textColor="@color/white"
+        android:fontFamily="@font/extra_light"
+        android:textStyle="bold"
+        android:id="@+id/activity_user_type_btn_user"/>
+    <Button
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button_border"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:text="@string/dealer"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/activity_user_type_btn_user"
+        android:fontFamily="@font/extra_light"
+        android:textStyle="bold"
+        android:id="@+id/activity_user_type_btn_dealer"/>
+
+</RelativeLayout>
